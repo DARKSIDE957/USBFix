@@ -82,6 +82,15 @@ If the files matter, recover what you can before you wipe the stick.
 - Windows 10 or Windows 11, 64 bit
 - Administrator rights
 
-## License and disclaimer
+## Please read this
 
-Use at your own risk. Flash controllers fail in messy ways. This tool repairs what Windows can still reach. It cannot revive a stick whose controller is fully locked or dead.
+This app is free to use.
+
+Important points in plain words:
+
+1. **You use it at your own risk.** If something goes wrong with your USB stick or your files, that risk is yours.
+2. **Wiping deletes everything** on the USB stick you select. Save your files first if they still matter.
+3. **Not every stick can be fixed.** If the chip inside the drive is broken or locked, no Windows app can bring it back.
+4. **This is not a data recovery lab.** It tries to make the stick usable again. It does not promise to recover lost files.
+
+If you are unsure, stop and get help before you wipe anything.
