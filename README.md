@@ -33,7 +33,7 @@ No installer. One EXE. Run as Administrator.
 2. Download **USBFix.exe**
 3. Right click the file and choose **Run as administrator**
 
-Current version: **1.2.6**
+Current version: **1.2.7**
 
 ## What you get
 
@@ -58,7 +58,7 @@ After a repair, the app writes a real test file. It does not trust Storage WMI a
 Choose **Black**, **White**, or **Match Windows**. Match Windows follows your system light or dark app theme.
 
 ### Report a problem
-If a fix fails, click **Report on GitHub**. The app copies the error details and opens a new issue on this repo so you can send it in one step.
+If a fix fails, click **Report on GitHub**. The app opens a new issue with the exact USB device details already filled in (model, VID/PID, size, serial, and status), copies the full log to the clipboard, and lets you submit it in one step.
 
 ## Who it is for
 
