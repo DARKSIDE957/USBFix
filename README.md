@@ -33,7 +33,7 @@ No installer. One EXE. Run as Administrator.
 2. Download **USBFix.exe**
 3. Right click the file and choose **Run as administrator**
 
-Current version: **1.2.7**
+Current version: **1.2.8**
 
 ## What you get
 
