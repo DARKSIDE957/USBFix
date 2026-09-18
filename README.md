@@ -23,7 +23,7 @@ Some USB drives stop behaving like normal storage.
 
 Windows shows them as RAW. Format fails. Disk Management hangs. The stick reports write protect or 0 bytes. Explorer looks useless, but the disk is still there.
 
-**USB Fix All in One** is a single elevated Windows app built for those cases. It walks the repair path stubborn flash drives usually need, including many SanDisk sticks that look dead but still respond at the disk level.
+**USB Fix All in One** is a single elevated Windows app built for those cases. It walks the repair path stubborn flash drives usually need, across SanDisk, Kingston, Lexar, Samsung, Transcend, PNY, Corsair, Sony, Toshiba/Kioxia, Phison/SMI OEM sticks, and unknowns.
 
 No installer. One EXE. Run as Administrator.
 
@@ -33,15 +33,18 @@ No installer. One EXE. Run as Administrator.
 2. Download **USBFix.exe**
 3. Right click the file and choose **Run as administrator**
 
-Current version: **1.2.8**
+Current version: **1.3.0**
 
 ## What you get
 
-### Quick Fix
-The main action. Clears software write protection, assigns a drive letter when needed, formats with the reliable Windows format path, and rebuilds the partition when a normal format is not enough.
+### Fix Everything
+One primary button. Confirms the selected USB, clears software write protect, formats or rebuilds when needed, verifies with a real write test on that disk only, then health checks every USB on the PC. A live step log sits under the button so you can see each stage as it runs.
 
-### Drive discovery
-Finds classic USB storage, UASP sticks, and other USB backed disks. Shows size, filesystem, bus type, VID/PID, and health chips so you know what you are dealing with.
+### Health scan
+Every listed stick gets a real present + usable check. Badges show **OK**, **Not writable**, **No letter**, **Locked**, or **Missing**.
+
+### Multi brand detection
+VID and model catalog for SanDisk, Kingston, Lexar, Samsung, Transcend, PNY, Corsair, Sony, Kioxia/Toshiba, ADATA, Verbatim, Phison, Silicon Motion, Alcor, IronKey, and more. Unknown sticks still get the same repair path.
 
 ### Advanced tools
 | Tool | Purpose |
@@ -50,9 +53,13 @@ Finds classic USB storage, UASP sticks, and other USB backed disks. Shows size, 
 | Check disk | Runs chkdsk on the selected volume |
 | Clean and format | Full wipe and rebuild of the USB disk |
 | Capacity probe | Catches fake or failing flash with real read/write checks |
+| Rescan | Forces Windows to refresh disks after a stick drops |
 
-### Honest verification
-After a repair, the app writes a real test file. It does not trust Storage WMI alone, because some broken sticks lie and claim they are healthy.
+### Honest outcomes
+After repair, the app writes a real test file on the selected disk. It never declares success from another stick’s drive letter. If the controller is hardware locked, you get a clear “dead / warranty” style message instead of a fake success.
+
+### Updates
+Use **Update** in the title bar to check GitHub Releases and install the latest EXE.
 
 ### Themes
 Choose **Black**, **White**, or **Match Windows**. Match Windows follows your system light or dark app theme.
@@ -63,7 +70,7 @@ If a fix fails, click **Report on GitHub**. The app opens a new issue with the e
 ## Who it is for
 
 - People stuck with a USB stick that Format and Disk Management cannot repair
-- SanDisk and other brands locked on write protect, RAW, or 0 byte capacity
+- Sticks locked on write protect, RAW, or 0 byte capacity
 - Anyone who wants one clean tool instead of hand writing diskpart scripts
 
 ## Safety
