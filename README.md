@@ -33,12 +33,12 @@ No installer. One EXE. Run as Administrator.
 2. Download **USBFix.exe**
 3. Right click the file and choose **Run as administrator**
 
-Current version: **1.3.0**
+Current version: **1.4.0**
 
 ## What you get
 
 ### Fix Everything
-One primary button. Confirms the selected USB, clears software write protect, formats or rebuilds when needed, verifies with a real write test on that disk only, then health checks every USB on the PC. A live step log sits under the button so you can see each stage as it runs.
+One button in the middle of the screen. Click it to see your USB drives, choose one, confirm, and watch each repair step appear under the button as it runs.
 
 ### Health scan
 Every listed stick gets a real present + usable check. Badges show **OK**, **Not writable**, **No letter**, **Locked**, or **Missing**.
@@ -57,6 +57,9 @@ VID and model catalog for SanDisk, Kingston, Lexar, Samsung, Transcend, PNY, Cor
 
 ### Honest outcomes
 After repair, the app writes a real test file on the selected disk. It never declares success from another stick’s drive letter. If the controller is hardware locked, you get a clear “dead / warranty” style message instead of a fake success.
+
+### UI improvements
+Simpler main screen with a clearer fix flow. Advanced tools stay under More so the first screen stays easy to understand.
 
 ### Updates
 Use **Update** in the title bar to check GitHub Releases and install the latest EXE.
